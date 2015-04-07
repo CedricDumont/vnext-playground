@@ -20,8 +20,6 @@ namespace idsrv3
             {
                 addToPipeline(next =>
                 {
-
-
                     var builder = new Microsoft.Owin.Builder.AppBuilder();
 
                     var provider = app.ApplicationServices.GetService<Microsoft.AspNet.Security.DataProtection.IDataProtectionProvider>();

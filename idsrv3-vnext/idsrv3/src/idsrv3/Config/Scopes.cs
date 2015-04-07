@@ -14,6 +14,7 @@ namespace idsrv3.Config
             List<Scope> scopes = new List<Scope>();
 
             scopes.AddRange(StandardScopes.All);
+
             scopes.Add(new Scope
                 {
                     Name = "api1",

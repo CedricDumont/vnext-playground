@@ -14,6 +14,7 @@ namespace idsrv3
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            // for web api
             services.AddMvc();
         }
 
@@ -49,10 +50,13 @@ namespace idsrv3
 
                 api.UseOAuthBearerAuthentication(options => {
                     options.Authority = Constants.AuthorizationUrl;
+                    // didn't try yet if options.MetadataAddress is necessary...
                     options.MetadataAddress = Constants.AuthorizationUrl + "/.well-known/openid-configuration";
                     options.TokenValidationParameters.ValidAudience = "https://idsrv3.com/resources"; 
                 });
 
+                
+                // for web api
                 api.UseMvc();
 
             });
