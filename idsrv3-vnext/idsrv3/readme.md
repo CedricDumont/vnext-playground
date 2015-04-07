@@ -7,12 +7,15 @@ to make the code build, I use this nuget feed to get the packages (so add them t
 
 nuget feed to use : https://www.myget.org/F/aspnetvnext/
 
-To test it, just hit F5 and it should run. Identity server is configure to this URL  http://localhost:4369/core
-the test controller listen to request here : 
+To test it, just hit F5 and it should run. Identity server is configure to this **URL  http://localhost:4369/core**
+
+the test controller listens to request here : http://localhost:4369/api/Test
 
 To test with fiddler : use the composer.
 
-1/ first try to hit the controller:
+**1/first using Fiddler (or postman) try to hit the controller:**
+
+
 ------------------------------------------------------------------
 
 		GET http://localhost:4369/api/Test
@@ -22,7 +25,7 @@ To test with fiddler : use the composer.
 				
 ------------------------------------------------------------------
 
-2/ next try to get an access_token
+**2/ next try to get an access_token**
 
 ------------------------------------------------------------------
 
@@ -50,7 +53,7 @@ the access_token is : eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImEzck1VZ01Gdj
 
 
 
-3/ retry the first request but add the Bearer token
+**3/ retry the first request but add the Bearer token**
 ------------------------------------------------------------------
 
 		GET http://localhost:4369/api/Test
@@ -76,5 +79,5 @@ the access_token is : eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImEzck1VZ01Gdj
 
 		{"message":"You See this then it's ok auth is  :True"}
 
-And voilà
+**THE END**
 
