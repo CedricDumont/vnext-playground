@@ -1,0 +1,32 @@
+﻿{
+    "webroot": "wwwroot",
+    "version": "1.0.0-*",
+    "dependencies": {
+        "Microsoft.AspNet.Server.IIS": "1.0.0-beta3",
+        "Microsoft.AspNet.Diagnostics": "1.0.0-beta3",
+        "Microsoft.AspNet.Mvc": "6.0.0-beta3",
+        "Thinktecture.IdentityServer3": "",
+        "Thinktecture.IdentityModel.Core": "1.4.0",
+        "Microsoft.Owin": "3.0.1",
+        "Microsoft.AspNet.Owin": "1.0.0-beta3",
+        //"Microsoft.AspNet.Security.OpenIdConnect": "",
+        "Microsoft.AspNet.Security.OAuthBearer" :  "1.0.0-beta3"
+
+    },
+    "frameworks": {
+        "aspnet50": { } //,
+        //"aspnetcore50": { }
+    },
+    "bundleExclude": [
+        "node_modules",
+        "bower_components",
+        "**.kproj",
+        "**.user",
+        "**.vspscc"
+    ],
+    "exclude": [
+        "wwwroot",
+        "node_modules",
+        "bower_components"
+    ]
+}
