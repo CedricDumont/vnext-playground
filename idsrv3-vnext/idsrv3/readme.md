@@ -1,4 +1,4 @@
-Identityserver v3 install using vnext.
+Identityserver v3 install using vnext. (in visual studio 2015 CTP 6)
 
 This repo is the code of this stack overflow question : 
 http://stackoverflow.com/questions/29360563/asp-net-5-oauth-bearer-token-authentication/29487480#29487480
