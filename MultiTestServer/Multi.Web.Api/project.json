@@ -3,11 +3,15 @@
     "version": "1.0.0-*",
     "dependencies": {
         "Microsoft.AspNet.Server.IIS": "1.0.0-beta3",
-        "Microsoft.AspNet.RequestContainer": "1.0.0-beta3",
-        "Microsoft.Net.Http.Client": "1.0.0-beta4-*"
+        "Microsoft.AspNet.RequestContainer": "1.0.0-beta3"
+        //"Microsoft.Net.Http.Client": "1.0.0-beta4-*",
     },
     "frameworks": {
-        "aspnet50": { }
+        "aspnet50": {
+            "frameworkAssemblies": {
+                "System.Net.Http": "4.0.0.0"
+            }
+        }
 
     },
     "bundleExclude": [
