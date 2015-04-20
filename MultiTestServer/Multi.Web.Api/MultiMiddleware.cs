@@ -57,7 +57,7 @@ namespace Multi.Web.Api
                 //
                 await context.Response.WriteAsync(calendarResponse + " count is " + calcResponse);
 
-                await next(context);
+               // await next(context);
             }
             finally
             {

@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNet.Builder;
+using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Http;
 using System;
 using System.Threading.Tasks;
@@ -45,7 +45,7 @@ namespace Multi.Web.Api.Test.FakeApi
                 throw new Exception("undefined host : " + context.Request.Host.Value);
             }
 
-            await next(context);
+            //await next(context);
         }
     }
 
